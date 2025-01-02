@@ -28,7 +28,9 @@ body {
     background-color: #dadada;
     font-family: "Quicksand", serif;
 }
-
+h1 {
+    margin-bottom: 20px;
+}
 .card-container {
     gap: 20px;
 }

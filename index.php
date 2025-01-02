@@ -5,16 +5,15 @@ spl_autoload_register(function ($class_name) {
 });
 
 $tomatoSalad = new Recipe (
-    "Starter",
     "Tomato Salad",
+    "Starter",
     10,
     "Mix tomatoes and lettuce",
     ["Tomato" => "2 units"]
 );
-
 $chickenSoup = new Recipe (
-    "Starter",
     "Chicken Soup",
+    "Starter",
     20,
     "Boil chicken and add vegetables",
     ["Chicken" => "1 unit",
@@ -23,18 +22,26 @@ $chickenSoup = new Recipe (
     "Onion" => "1 unit"]
 );
 $bruschetta = new Recipe (
-    "Starter",
     "Bruschetta",
+    "Starter",
     15,
     "Toast bread and top with tomatoes",
     ["Tomato" => "2 units",
     "Bread" => "4 slices"]
 );
+$grilledChicken = new Recipe (
+    "Grilled Chicken",
+    "Main",
+    30,
+    "Grill the chicken and serve",
+    ["Chicken" => "1 unit"]
+);
 
 $recipes = [
     $tomatoSalad,
     $chickenSoup,
-    $bruschetta
+    $bruschetta,
+    $grilledChicken
 ];
 ?>
 
