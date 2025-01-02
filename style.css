@@ -1,0 +1,64 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/* UTILITIES */
+:root {
+    --color-dark: #3f3f3f;
+    --color-main: #408082;
+}
+.row {
+    display: flex;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* MAIN */
+
+body {
+    background-color: #dadada;
+    font-family: "Quicksand", serif;
+}
+
+.card {
+    width: 350px;
+    background-color: white;
+    color: var(--color-dark);
+    border-radius: 10px;
+    overflow: hidden;
+    gap: 15px;
+    padding: 0 0 15px 15px;
+
+    .type {
+        margin-left: auto;
+        color: white;
+        background-color: var(--color-dark);
+        padding: 7px 12px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .name {
+        color: var(--color-main);
+        font-size: 1.5em;
+    }
+    strong {
+        font-size: 1.2em;
+    }
+    .ingredients {
+        gap: 5px;
+    }
+    .ingredient {
+        text-align: center;
+        line-height: 100%;
+        color: white;
+        background-color: var(--color-main);
+        padding: 10px;
+        border-radius: 10px;
+    }
+}

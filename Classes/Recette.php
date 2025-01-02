@@ -1,6 +1,6 @@
 <?php
 
-class Recette {
+class Recipe {
 
     //Attributes
     private string $name;
@@ -116,6 +116,12 @@ class Recette {
 
         return $this;
     }
+
+
+    public function createRecipeCard(){
+        $result = "<div class='card'>";
+    }
+
 
 
     public function __toString(){

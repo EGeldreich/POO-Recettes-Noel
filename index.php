@@ -6,7 +6,7 @@ spl_autoload_register(function ($class_name) {
     require 'classes/'.$class_name.'.php';
 });
 
-$tomatoSalad = new Recette (
+$tomatoSalad = new Recipe (
     "Starter",
     "Tomato Salad",
     10,
@@ -14,7 +14,7 @@ $tomatoSalad = new Recette (
     ["Tomato" => 2]
 );
 
-$chickenSoup = new Recette (
+$chickenSoup = new Recipe (
     "Starter",
     "Chicken Soup",
     20,
