@@ -128,7 +128,7 @@ class Recipe {
             </p>
             <p>".$this->instruction."</p>
             <p><strong>Ingredients</strong></p>
-            <ul class='ingredients row'>";
+            <ul class='ingredients row wrap'>";
         foreach($this->ingredients as $ingredient => $qtt){
             $result .= "<li class='ingredient'>".$ingredient."<br />".$qtt."</li>";
         }
