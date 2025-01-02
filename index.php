@@ -9,7 +9,7 @@ $tomatoSalad = new Recipe (
     "Tomato Salad",
     10,
     "Mix tomatoes and lettuce",
-    ["Tomato" => 2]
+    ["Tomato" => "2 units"]
 );
 
 $chickenSoup = new Recipe (
@@ -17,12 +17,25 @@ $chickenSoup = new Recipe (
     "Chicken Soup",
     20,
     "Boil chicken and add vegetables",
-    ["Chicken" => 1,
-    "Tomato" => 2,
-    "Lettuce" =>1,
-    "Onion" => 1]
+    ["Chicken" => "1 unit",
+    "Tomato" => "2 units",
+    "Lettuce" => "1 unit",
+    "Onion" => "1 unit"]
+);
+$bruschetta = new Recipe (
+    "Starter",
+    "Bruschetta",
+    15,
+    "Toast bread and top with tomatoes",
+    ["Tomato" => "2 units",
+    "Bread" => "4 slices"]
 );
 
+$recipes = [
+    $tomatoSalad,
+    $chickenSoup,
+    $bruschetta
+];
 ?>
 
 <!DOCTYPE html>
@@ -48,8 +61,12 @@ $chickenSoup = new Recipe (
     </head>
     <body>
         <h1>My Recipes</h1>
-        <div class="row wrap">
-        <?= $tomatoSalad->createRecipeCard(); ?>
+        <div class="card-container row wrap">
+        <?php
+            foreach($recipes as $recipe){
+                echo $recipe->createRecipeCard();
+            }
+        ?>
         </div>
     </body>
 </html>

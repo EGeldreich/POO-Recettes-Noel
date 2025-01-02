@@ -18,6 +18,9 @@
     display: flex;
     flex-direction: column;
 }
+.wrap {
+    flex-wrap: wrap;
+}
 
 /* MAIN */
 
@@ -26,8 +29,12 @@ body {
     font-family: "Quicksand", serif;
 }
 
+.card-container {
+    gap: 20px;
+}
+
 .card {
-    width: 350px;
+    width: 400px;
     background-color: white;
     color: var(--color-dark);
     border-radius: 10px;
@@ -48,7 +55,7 @@ body {
         font-size: 1.5em;
     }
     strong {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
     .ingredients {
         gap: 5px;
@@ -58,7 +65,7 @@ body {
         line-height: 100%;
         color: white;
         background-color: var(--color-main);
-        padding: 10px;
-        border-radius: 10px;
+        padding: 15px;
+        border-radius: 15px;
     }
 }
