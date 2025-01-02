@@ -119,7 +119,23 @@ class Recipe {
 
 
     public function createRecipeCard(){
-        $result = "<div class='card'>";
+        $result = "<div class='card column'>
+            <p class='type'>".$this->type."</p>
+            <h3 class='name'>".$this->name."</h3>
+            <p class='preparationTime'>
+                <i class='fa-regular fa-clock'></i>
+                ".$this->preparationTime." min
+            </p>
+            <p>".$this->instruction."</p>
+            <p><strong>Ingredients</strong></p>
+            <ul class='ingredients row'>";
+        foreach($this->ingredients as $ingredient => $qtt){
+            $result .= "<li class='ingredient'>".$ingredient."<br />".$qtt."</li>";
+        }
+        $result .= "</ul>
+            </div>";
+        
+        return $result;
     }
 
 
